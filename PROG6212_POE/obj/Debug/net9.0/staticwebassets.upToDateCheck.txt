@@ -62,6 +62,7 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\uploads\78ec6416-284a-402d-8783-a13749d8e339.pdf
+wwwroot\uploads\b2b1eb16-9596-4b63-8559-db2da6e2f144.pdf
 wwwroot\uploads\b6652af3-d86e-44b1-92e0-5688cf1eef59.pdf
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\css\site.css
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\favicon.ico
