@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|c:\\users\\moegammad yaaseen\\onedrive\\desktop\\programming\\prog6212_part2_st10453511\\prog6212_poe\\controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|solutionrelative:controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|c:\\users\\moegammad yaaseen\\onedrive\\desktop\\programming\\prog6212_part2_st10453511\\prog6212_poe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|c:\\users\\moegammad yaaseen\\onedrive\\desktop\\programming\\prog6212_part2_st10453511\\prog6212_poe\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|c:\\users\\moegammad yaaseen\\onedrive\\desktop\\programming\\prog6212_part2_st10453511\\prog6212_poe\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2A63EA-E7A1-44BC-A1EC-465CF2385CCE}|PROG6212_POE.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\ManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagementController.cs",
+              "ToolTip": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\ManagementController.cs",
+              "RelativeToolTip": "Controllers\\ManagementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:06:33.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:06:25.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:06:13.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Moegammad Yaaseen\\OneDrive\\Desktop\\Programming\\PROG6212_PART2_ST10453511\\PROG6212_POE\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:05:58.468Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
