@@ -29,3 +29,119 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* === Hero === */
+.hero {
+    position: relative;
+    padding: 96px 0 72px;
+    background: radial-gradient(1200px 600px at 10% -10%, rgba(13,110,253,.10), transparent), radial-gradient(1200px 600px at 90% -20%, rgba(32,201,151,.12), transparent), linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+    .hero h1 {
+        letter-spacing: .2px;
+    }
+
+    .hero .lead {
+        max-width: 820px;
+        margin: 0 auto;
+        color: #6c757d;
+    }
+
+/* CTA buttons */
+.btn-hero {
+    padding: .8rem 1.4rem;
+    border-radius: .75rem;
+    box-shadow: 0 6px 18px rgba(13,110,253,.15);
+}
+
+.btn-ghost {
+    border: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+}
+
+/* Feature cards */
+.feature-card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+    .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 36px rgba(0,0,0,.10);
+    }
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    background: #e7f1ff; /* default */
+}
+
+    .feature-icon.success {
+        background: #e6f7f1;
+    }
+
+    .feature-icon.warning {
+        background: #fff4e6;
+    }
+
+    .feature-icon i {
+        font-size: 1.4rem;
+    }
+
+/* Mini stats strip */
+.stat-pill {
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    padding: .5rem .9rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
+
+/* Footer refine */
+footer {
+    border-top: 1px solid rgba(0,0,0,.06) !important;
+}
+
+
+
+/* === Navbar modern styling === */
+.navbar {
+    letter-spacing: .3px;
+    transition: background-color .3s ease;
+}
+
+    .navbar .nav-link {
+        color: rgba(255,255,255,.85) !important;
+        transition: color .2s ease;
+    }
+
+        .navbar .nav-link:hover {
+            color: #0dcaf0 !important;
+        }
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* === Main body background refinement === */
+body.bg-light {
+    background-color: #f6f7f9 !important;
+}
+
+/* === Footer minimalistic === */
+footer {
+    background: #111;
+    color: #bbb;
+}
+
+    footer .container span {
+        color: #aaa;
+    }
