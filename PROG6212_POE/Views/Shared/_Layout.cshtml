@@ -34,11 +34,24 @@
                 <ul class="navbar-nav me-auto">
                     @if (User.Identity?.IsAuthenticated ?? false)
                     {
-                        <li class="nav-item"><a class="nav-link" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Dashboard" asp-action="MyClaims">My Claims</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                        </li>
+
+                        @* Show My Claims only to Lecturers *@
+                        @if (User.IsInRole("Lecturer"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Dashboard" asp-action="MyClaims">My Claims</a>
+                            </li>
+                        }
+
+                        @* Review visible to ProgrammeCoordinator or AcademicManager *@
                         @if (User.IsInRole("ProgrammeCoordinator") || User.IsInRole("AcademicManager"))
                         {
-                            <li class="nav-item"><a class="nav-link" asp-controller="Management" asp-action="ReviewClaims">Review</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Management" asp-action="ReviewClaims">Review</a>
+                            </li>
                         }
                     }
                 </ul>
