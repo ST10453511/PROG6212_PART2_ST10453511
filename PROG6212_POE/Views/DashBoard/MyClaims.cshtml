@@ -3,10 +3,11 @@
 @{
     ViewData["Title"] = "My Claims";
 }
-<div class="card">
-    <div class="card-header bg-white d-flex align-items-center justify-content-between">
-        <span class="fw-semibold">My Claims</span>
-        <div class="d-flex gap-2">
+
+<div class="card surface">
+    <div class="card-header clean d-flex align-items-center justify-content-between">
+        <span>My Claims</span>
+        <div class="toolbar">
             <input id="search" class="form-control form-control-sm" placeholder="Search activity..." />
             <select id="status" class="form-select form-select-sm" style="width:12rem">
                 <option value="">All statuses</option>
@@ -20,7 +21,7 @@
     <div class="card-body p-0">
         @if (Model == null || !Model.Any())
         {
-            <div class="p-4 text-muted">No claims yet.</div>
+            <div class="empty">No claims yet. Create your first one from <strong>Submit Claim</strong>.</div>
         }
         else
         {
@@ -34,7 +35,7 @@
                             <th>Rate (R)</th>
                             <th>Total (R)</th>
                             <th>Status</th>
-                            <th style="min-width:160px;">Progress</th>
+                            <th style="min-width:180px;">Progress</th>
                             <th>Docs</th>
                             <th>Submitted</th>
                         </tr>
@@ -42,20 +43,22 @@
                     <tbody>
                         @foreach (var c in Model)
                         {
-                            var width = c.Status == ClaimStatus.Submitted ? 33 :
-                            c.Status == ClaimStatus.UnderReview ? 66 : 100;
-                            var barClass = c.Status == ClaimStatus.Approved ? "bg-success" :
-                            c.Status == ClaimStatus.Rejected ? "bg-danger" : "bg-info";
+                            var width = c.Status == ClaimStatus.Submitted ? 33 : c.Status == ClaimStatus.UnderReview ? 66 : 100;
+                            var badge =
+                            c.Status == ClaimStatus.UnderReview ? "badge-review" :
+                            c.Status == ClaimStatus.Approved ? "badge-approved" :
+                            c.Status == ClaimStatus.Rejected ? "badge-rejected" : "badge-submitted";
+
                             <tr data-status="@c.Status" data-act="@c.Activity.ToLowerInvariant()">
                                 <td>@c.DateWorked.ToString("yyyy-MM-dd")</td>
                                 <td>@c.HoursWorked</td>
                                 <td>@c.Activity</td>
                                 <td>@c.HourlyRate.ToString("N2")</td>
                                 <td>@c.TotalAmount.ToString("N2")</td>
-                                <td><span class="claim-status" data-id="@c.ClaimId">@c.Status</span></td>
+                                <td><span class="badge badge-status @badge claim-status" data-id="@c.ClaimId">@c.Status</span></td>
                                 <td>
-                                    <div class="progress" style="height:8px;">
-                                        <div class="progress-bar @barClass" data-id="@c.ClaimId" style="width:@width%"></div>
+                                    <div class="progress progress-slim">
+                                        <div class="progress-bar" data-id="@c.ClaimId" style="width:@width%"></div>
                                     </div>
                                 </td>
                                 <td>
@@ -63,13 +66,15 @@
                                     {
                                         foreach (var d in c.Documents)
                                         {
-                                            <a href="@d.RelativePath" target="_blank">@d.FileName</a>
+                                            <a href="@d.RelativePath" target="_blank" class="small">@d.FileName</a>
+                            
                                             <br />
                                         }
                                     }
                                     else
                                     {
-                                        <span class="text-muted">None</span>
+
+                                        <span class="text-muted small">None</span>
                                     }
                                 </td>
                                 <td>@c.SubmittedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
@@ -85,16 +90,19 @@
 @section Scripts {
     <script>
         const statusPercent = s => s==="Submitted"?33:(s==="UnderReview"?66:100);
-        const statusClass = s => s==="Approved"?"bg-success":(s==="Rejected"?"bg-danger":"bg-info");
+        const statusClass = s => s==="Approved"?"badge-approved":(s==="Rejected"?"badge-rejected":(s==="UnderReview"?"badge-review":"badge-submitted"));
 
         function refreshStatuses(){
           fetch('@Url.Action("MyClaimsStatusData", "Dashboard")',{cache:"no-store"})
             .then(r=>r.json()).then(items=>{
               items.forEach(it=>{
-                const span=document.querySelector(`span.claim-status[data-id='${it.id}']`);
-                const bar=document.querySelector(`div.progress-bar[data-id='${it.id}']`);
-                if(span) span.textContent=it.status;
-                if(bar){ bar.style.width=statusPercent(it.status)+"%"; bar.className="progress-bar "+statusClass(it.status); }
+                document.querySelectorAll(`span.claim-status[data-id='${it.id}']`).forEach(span=>{
+                  span.textContent = it.status;
+                  span.className = "badge badge-status " + statusClass(it.status);
+                });
+                document.querySelectorAll(`div.progress-bar[data-id='${it.id}']`).forEach(bar=>{
+                  bar.style.width = statusPercent(it.status) + "%";
+                });
               });
             }).catch(()=>{});
         }

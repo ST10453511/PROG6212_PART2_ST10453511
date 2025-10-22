@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,7 +61,9 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
+wwwroot\uploads\b6652af3-d86e-44b1-92e0-5688cf1eef59.pdf
+wwwroot\uploads\78ec6416-284a-402d-8783-a13749d8e339.pdf
+C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\css\site.css
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\favicon.ico
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\js\site.js
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -122,4 +125,3 @@ C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST1045351
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\Moegammad Yaaseen\OneDrive\Desktop\Programming\PROG6212_PART2_ST10453511\PROG6212_POE\wwwroot\css\site.css

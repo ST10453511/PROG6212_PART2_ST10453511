@@ -91,9 +91,9 @@ public class InMemoryUserStore : IUserStore
 {
     private static readonly List<DemoUser> Users = new()
     {
-        new() { UserId = "U1", Username = "Lecturer", FullName = "Lecturer", Role = "Lecturer" },
-        new() { UserId = "U2", Username = "Programme Coordinator",        FullName = "Coordinator", Role = "ProgrammeCoordinator" },
-        new() { UserId = "U3", Username = "Academic Manager",        FullName = "Manager", Role = "AcademicManager" },
+        new() { UserId = "U1", Username = "Lecturer", FullName = "Lecturer - Moegammad", Role = "Lecturer" },
+        new() { UserId = "U2", Username = "Programme Coordinator",        FullName = "Coordinator - Fazlin", Role = "ProgrammeCoordinator" },
+        new() { UserId = "U3", Username = "Academic Manager",        FullName = "Manager - Riyaaz", Role = "AcademicManager" },
         new() { UserId = "admin", Username = "admin",   FullName = "System Admin", Role = "Admin" },
     };
 
