@@ -3,6 +3,12 @@ Moegammad Alexander
 PROG6212
 POE PART 2
 
+GitHub Link:
+https://github.com/ST10453511/PROG6212_PART2_ST10453511.git 
+
+YouTube Link:
+https://youtu.be/gpLDhu-UuL4
+
 Contract Monthly Claim System (CMCS)
 A .NET Core MVC Web Application for Streamlining Lecturer Claim Submissions and Approvals
 
